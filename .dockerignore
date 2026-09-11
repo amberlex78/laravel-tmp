@@ -1,0 +1,14 @@
+.git
+.github
+.idea
+.vscode
+.codex
+.claude
+.agents
+node_modules
+vendor
+storage/logs/*.log
+.env
+docker-compose*.yml
+Dockerfile
+README.md
