@@ -52,7 +52,6 @@ services:
     composer:
         image: composer:2.9.8
         profiles: ["tools"]
-        user: "${HOST_UID:-1000}:${HOST_GID:-1000}"
         working_dir: /var/www/html
         entrypoint: ["composer"]
         volumes:
