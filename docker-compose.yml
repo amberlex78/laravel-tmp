@@ -53,6 +53,10 @@ services:
         image: composer:2.9.8
         profiles: ["tools"]
         working_dir: /var/www/html
+        environment:
+            GIT_CONFIG_COUNT: "1"
+            GIT_CONFIG_KEY_0: safe.directory
+            GIT_CONFIG_VALUE_0: /var/www/html
         entrypoint: ["composer"]
         volumes:
             - .:/var/www/html
